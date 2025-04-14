@@ -1,0 +1,19 @@
+--key auth goes hard 
+--to execute, use this: loadstring(game:HttpGet("https://raw.githubusercontent.com/gpuu/crackedscripts/refs/heads/main/neoxhub"))()
+local oldIsFile
+oldIsFile = hookfunction(isfile, function(filename)
+    if filename == "newkeys.txt" then
+        return true
+    end
+    return oldIsFile(filename)
+end)
+
+local oldReadFile
+oldReadFile = hookfunction(readfile, function(filename)
+    if filename == "newkeys.txt" then
+        return "m4c15"
+    end
+    return oldReadFile(filename)
+end)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hassanxzayn-lua/NEOXHUBMAIN/refs/heads/main/loader"))()
