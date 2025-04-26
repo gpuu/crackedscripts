@@ -17,10 +17,6 @@ oldReadFile = hookfunction(readfile, function(filename)
     return oldReadFile(filename)
 end)
 
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "ATTENTION",
-	Text = "LAG IS COMING IN 5 SECONDS, IT MAY CRASH!",
-})
-wait(5)
+
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/hassanxzayn-lua/NEOXHUBMAIN/refs/heads/main/deadrails"))()
