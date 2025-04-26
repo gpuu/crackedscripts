@@ -1,6 +1,7 @@
 --to execute, use this: loadstring(game:HttpGet("https://raw.githubusercontent.com/progressivity-real/Scripts/refs/heads/main/neoxhub"))()
 --only for dead rails
 --you need hookfunction to execute
+--please dont neox hub, its so laggy
 if hookfunction then
     local oldIsFile
     oldIsFile = hookfunction(isfile, function(filename)
