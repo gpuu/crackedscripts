@@ -2,6 +2,7 @@
 --only for dead rails
 --you need hookfunction to execute
 --please dont use neox hub, its so laggy
+--if you looking for REALLY good script, try Rift or Lunor (noad)
 if hookfunction then
     local oldIsFile
     oldIsFile = hookfunction(isfile, function(filename)
