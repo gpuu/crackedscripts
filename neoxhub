@@ -1,6 +1,7 @@
 --key auth goes hard 
 --to execute, use this: loadstring(game:HttpGet("https://raw.githubusercontent.com/gpuu/crackedscripts/refs/heads/main/neoxhub"))()
 --only for dead rails
+--you need hookmetamethod
 local oldIsFile
 oldIsFile = hookfunction(isfile, function(filename)
     if filename == "newkeys.txt" then
